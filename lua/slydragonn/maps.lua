@@ -14,8 +14,11 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
+
 -- Window Navigation
 map("n", "<C-h>", "<C-w>h")
+vim.keymap.del("n", "<C-L>")
 map("n", "<C-l>", "<C-w>l")
 map("n", "<C-k>", "<C-w>k")
 map("n", "<C-j>", "<C-w>j")

@@ -1,3 +1,3 @@
 require("slydragonn.settings")
-require("slydragonn.maps")
 require("slydragonn.lazy")
+require("slydragonn.maps")
