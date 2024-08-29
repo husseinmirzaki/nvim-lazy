@@ -32,6 +32,7 @@ return {
 				"vim",
 				"dockerfile",
 				"gitignore",
+				"vetur-vls",
 				"c",
 				"rust",
 			},

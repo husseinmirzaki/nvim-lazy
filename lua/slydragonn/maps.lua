@@ -4,23 +4,15 @@ local function map(mode, lhs, rhs)
 	vim.keymap.set(mode, lhs, rhs, { silent = true })
 end
 
+vim.keymap.set("n", "<leader>pv", ":Exp<cr>")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- Save
-map("n", "<leader>w", "<CMD>update<CR>")
-
--- Quit
-map("n", "<leader>q", "<CMD>q<CR>")
-
--- Exit insert mode
-map("i", "jk", "<ESC>")
-
--- NeoTree
-map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
-map("n", "<leader>r", "<CMD>Neotree focus<CR>")
-
--- New Windows
-map("n", "<leader>o", "<CMD>vsplit<CR>")
-map("n", "<leader>p", "<CMD>split<CR>")
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
 -- Window Navigation
 map("n", "<C-h>", "<C-w>h")
