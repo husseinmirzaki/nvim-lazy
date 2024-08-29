@@ -1,3 +1,10 @@
 require("slydragonn.settings")
-require("slydragonn.lazy")
 require("slydragonn.maps")
+require("slydragonn.lazy")
+
+vim.keymap.set("n", "<leader><leader>w", ":HopWordCurrentLineAC")
+vim.keymap.set("n", "<leader><leader>b", ":HopWordCurrentLineBC")
+vim.keymap.set("n", "<leader><leader>W", ":HopWordAC")
+vim.keymap.set("n", "<leader><leader>B", ":HopWordBC")
+vim.keymap.set("n", "<leader><leader>k", ":HopLineStartBC")
+vim.keymap.set("n", "<leader><leader>j", ":HopLineStartAC")
